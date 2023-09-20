@@ -1,26 +1,26 @@
 {
-  "compilerOptions": {
-    "target": "ESNext", // Use the latest ECMAScript version supported by Node.js
-    "module": "ESNext", // Use CommonJS for Node.js projects
-    "moduleResolution": "node",
-    "outDir": "./dist", // Specify the output directory for compiled JavaScript files
-    "rootDir": "./src", // Specify the root directory for TypeScript source files
-    "strict": true, // Enable strict type checking
-    "esModuleInterop": true, // Enable CommonJS/ES module interop
-    "skipLibCheck": true, // Skip type checking of declaration files (recommended for better performance)
-    "strictNullChecks": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "strictPropertyInitialization": false,
-    "baseUrl": "./", // Base URL for module resolution
-    "paths": {
-      "*": ["node_modules/*", "src/types/*"] // Custom module resolution paths
-    }
-  },
-  "include": ["src/**/*.ts"], // Include TypeScript files in the src directory
-  "exclude": ["node_modules"], // Exclude the node_modules directory
-  "ts-node": {
-    "require": ["tsconfig-paths/register"]
-  }
+	"compilerOptions": {
+		"target": "ESNext", // Use the latest ECMAScript version supported by Node.js
+		"module": "ESNext", // Use CommonJS for Node.js projects
+		"moduleResolution": "node",
+		"outDir": "./dist", // Specify the output directory for compiled JavaScript files
+		"rootDir": "./src", // Specify the root directory for TypeScript source files
+		"strict": true, // Enable strict type checking
+		"esModuleInterop": true, // Enable CommonJS/ES module interop
+		"skipLibCheck": true, // Skip type checking of declaration files (recommended for better performance)
+		"strictNullChecks": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"forceConsistentCasingInFileNames": true,
+		"strictPropertyInitialization": false,
+		"baseUrl": "./", // Base URL for module resolution
+		"paths": {
+			"*": ["node_modules/*", "src/*"] // Custom module resolution paths
+		}
+	},
+	"include": ["src/**/*.ts"], // Include TypeScript files in the src directory
+	"exclude": ["node_modules"], // Exclude the node_modules directory
+	"ts-node": {
+		"require": ["tsconfig-paths/register"]
+	}
 }
